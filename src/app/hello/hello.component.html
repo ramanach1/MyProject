@@ -1,0 +1,9 @@
+<p *ngIf="!greting">no text on box</p>
+
+
+<p>
+{{[this.greting]}}
+</p>
+
+<button (click)="setGrettingUp()">up</button>
+<input type="text" [(ngModel)]='greting'>
