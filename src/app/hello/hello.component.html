@@ -1,5 +1,7 @@
-<p *ngIf="!greting">no text on box</p>
-
+<p *ngIf='!greting; else gretingAdd'>no text on box</p>
+<ng-template #gretingAdd>
+  <p>You add text right now!</p>
+</ng-template>
 
 <p>
 {{[this.greting]}}
